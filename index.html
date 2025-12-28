@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моё портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Моё портфолио</h1>
+    <h2>Обо мне</h2>
+    <p>Я - Винокуров Иван, студент ОмГТУ, это моя первая работа по фронтенд-разработке.</p>
+    <h2>Моё образование</h2>
+    <p>На данный момент я учусь в ОмГТУ, закончил 11 классов в Лицее «БИТ».</p>
+    <h2>Мои увлечения</h2>
+    <table id="personTable">
+        <thead>
+            <tr>
+                <th>Увлечение</th>
+                <th>Опыт</th>
+                <th>Email</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="personTableBody">
+        </tbody>
+    </table>
+    <form id="personForm" class="form-block">
+        <h3>Добавить увлечение</h3>
+        <div class="form-row">
+            <label for="hobby">Увлечение:</label>
+            <input type="text" id="hobby" name="hobby">
+            <span id="hobbyError" class="error-text"></span>
+        </div>
+        <div class="form-row">
+            <label for="exp">Опыт:</label>
+            <input type="text" id="exp" name="exp">
+            <span id="expError" class="error-text"></span>
+        </div>
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span id="emailError" class="error-text"></span>
+        </div>
+        <div id="formError" class="error-text"></div>
+        <button type="submit" id="addBtn">Добавить</button>
+    </form>
+
+    <h2>Связь со мной</h2>
+    <p><a href="https://www.omgtu.ru">Сайт ОмГТУ</a></p>
+    <p><a href="mailto:hhohotyn@bk.ru">Написать на почту</a></p>
+    <p><a href="tel:+79334442820">Позвонить</a></p>
+    <h2>Мой слайдер</h2>
+    <div class="slider" id="slider">
+        <div class="slider-track" id="slides">
+            <div class="slide active">
+                <h3>Слайд 1</h3>
+                <p>Cлайд 1</p>
+            </div>
+            <div class="slide">
+                <p>ribalochs</p>
+            </div>
+            <div class="slide">
+                <p>ribalochs</p>
+            </div>
+            <div class="slide">
+                <h3>skide 4</h3>
+                <p>ribalochs</p>
+            </div>
+        </div>
+        <button class="slider-btn prev" id="prevBtn">&#8249;</button>
+        <button class="slider-btn next" id="nextBtn">&#8250;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
